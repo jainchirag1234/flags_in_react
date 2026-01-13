@@ -1,0 +1,52 @@
+const NetflixSeries = () => {
+  const name = "Queen of tears";
+  // const rating = 8.2;
+  const summary =
+    " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velitquam maiores esse commodi corporis fugiat aut quaerat eaque eligendi consequatur, est accusamus quod, magnam repellendus quisquam eum nam reprehenderit. Natus iusto eius ducimus officiis cum magnam, facilis dolore perferendis laborum sequi nihil qua";
+  const returnGenre = () => {
+    const genre = "RomCom";
+    return genre;
+  };
+  let age = 19;
+  const canWatch = () => {
+    if (age >= 18) return "Watch Now";
+    return "Not Available";
+  };
+  // if (age < 18) {
+  //   return (
+  //     <div>
+  //       <div>
+  //         <img src="king.jpg" alt="king.jpg" wiidth="40%" height="40%" />
+  //       </div>
+  //       <h2>Name: {name} </h2>
+  //       <h3>Rating:{15 + 3.2}</h3>
+  //       <p>Summary:{summary} </p>
+  //       <p>Genre:{returnGenre()}</p>
+  //       <button>Not Available</button>
+  //     </div>
+  //   );
+  // }
+  // let canWatch = "Not Available";
+  // if (age >= 18) canWatch = "Watch Now";
+  return (
+    <div>
+      <div>
+        <img src="king.jpg" alt="king.jpg" wiidth="40%" height="40%" />
+      </div>
+      <h2>Name: {name} </h2>
+      <h3>Rating:{15 + 3.2}</h3>
+      <p>Summary:{summary} </p>
+      <p>Genre:{returnGenre()}</p>
+      {/* <button>{canWatch}</button> */}
+      <button>{canWatch()}</button>
+      {/* <button>{age >= 18 ? "Watch Now" : "Not Available"}</button> */}
+    </div>
+  );
+};
+export default NetflixSeries;
+export const Header = () => {
+  return <p>copyright @thapatechnical</p>;
+};
+export const Footer = () => {
+  return <p>copyright @thapatechnical</p>;
+};

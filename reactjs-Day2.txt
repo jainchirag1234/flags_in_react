@@ -1,0 +1,5 @@
+Dynamic Values Using Variables
+//? You can embed any JavaScript variable within JSX by enclosing it in curly braces. 
+The value of the variable will be inserted into the DOM at the respective location.
+Dynamic Values Using Expressions
+JSX allows you to write JavaScript expressions inside curly braces. This includes operations,function calls, and other JavaScript expressions that produce a value.

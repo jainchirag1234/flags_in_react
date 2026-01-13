@@ -1,0 +1,50 @@
+bun i react@rc
+bun i react-dom@rc
+components->instances->React Element->DOM Element->Final UI
+import {jsx as _jsx} from "react/jsx-runtime";
+/*__PURE__*/_jsx("h1",{
+	children:"Hello World"
+});  
+virtual DOM:-
+$$typeof
+: 
+Symbol(react.transitional.element)
+key
+: 
+null
+props
+: 
+{children: 'Hello,Thapa Technical'}
+type
+: 
+"h1"
+_owner
+: 
+null
+_store
+: 
+{validated: 0}
+ref
+: 
+null
+_debugInfo
+: 
+null
+_debugStack
+: 
+Error: react-stack-top-frame at exports.createElement (http://localhost:5173/node_modules/.vite/deps/chunk-E7O7WYRO.js?v=3baffeac:793:22) at http://localhost:5173/src/App.jsx?t=1767351543951:11:19
+_debugTask
+: 
+{run: ƒ}
+[[Prototype]]
+: 
+Object
+
+//?Each JSX expression must have one parent elment, which means if you 
+try to return multiple elements,React will throw an error.
+
+//?Every JSX tag needs to be closed.You can use self-closing tags for
+elements that don't have children.e.g.,<img src="url"/>
+
+You can embed any JavaScript variable within JSX by enclosing it in curly braces.
+The value of the variable will be inserted into the DOM at the respective location.

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+:root {
+  --primary: #2563eb;
+  --secondary: #1e40af;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --card: rgba(255, 255, 255, 0.9);
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #f8fafc, #eef2ff);
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin: 15px 0 30px;
+  opacity: 0.95;
+}
+
+.hero a {
+  padding: 14px 36px;
+  background: white;
+  color: var(--primary);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.hero a:hover {
+  transform: scale(1.08);
+  background: #e0e7ff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 14px;
+  text-align: center;
+  z-index: 999;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #93c5fd;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ================= SECTION ================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ================= ABOUT ================= */
+#about p {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills span {
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 14px 26px;
+  margin: 12px;
+  border-radius: 35px;
+  font-weight: 500;
+  transition: 0.4s;
+  cursor: default;
+}
+
+.skills span:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.project {
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  transition: 0.4s;
+}
+
+.project:hover {
+  transform: translateY(-15px);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.project h3 {
+  margin: 18px 0 10px;
+  font-size: 1.4rem;
+}
+
+.project p {
+  font-size: 0.95rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 26px;
+  background: var(--primary);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.project a:hover {
+  background: var(--secondary);
+}
+
+/* ================= CERTIFICATES ================= */
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.certificate {
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.certificate:hover {
+  transform: translateY(-12px);
+}
+
+.certificate img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.certificate h3 {
+  margin-top: 15px;
+}
+
+/* ================= CONTACT ================= */
+#contact p {
+  text-align: center;
+  margin: 14px 0;
+  font-size: 1.05rem;
+}
+
+#contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 2.5rem;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+}

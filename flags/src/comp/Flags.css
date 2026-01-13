@@ -1,0 +1,100 @@
+/* Page container */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search section */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Country list grid */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 flags per row */
+  gap: 20px;
+}
+
+/* Country card */
+li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Flag image */
+li img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Text styling */
+li strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #222;
+}
+
+li p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Loading & Error */
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}

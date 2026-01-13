@@ -1,0 +1,16 @@
+  // if (age < 18) {
+  //   return (
+  //     <div>
+  //       <div>
+  //         <img src="king.jpg" alt="king.jpg" wiidth="40%" height="40%" />
+  //       </div>
+  //       <h2>Name: {name} </h2>
+  //       <h3>Rating:{15 + 3.2}</h3>
+  //       <p>Summary:{summary} </p>
+  //       <p>Genre:{returnGenre()}</p>
+  //       <button>Not Available</button>
+  //     </div>
+  //   );
+  // }
+  // let canWatch = "Not Available";
+  // if (age >= 18) canWatch = "Watch Now";
