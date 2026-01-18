@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Challenge1 = () => {
+const Challenge = () => {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState("");
   const [history, setHistory] = useState([]);
